@@ -19708,6 +19708,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _comment = __webpack_require__(163);
+
+	var _comment2 = _interopRequireDefault(_comment);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var CommentList = _react2.default.createClass({
@@ -19717,7 +19721,16 @@
 	        return _react2.default.createElement(
 	            'div',
 	            { className: 'commentList' },
-	            'Hello, world! I am a CommentList'
+	            _react2.default.createElement(
+	                _comment2.default,
+	                { author: 'Pete Hunt' },
+	                'This is one comment'
+	            ),
+	            _react2.default.createElement(
+	                _comment2.default,
+	                { author: 'Jordan Walke' },
+	                'This is *another* comment'
+	            )
 	        );
 	    }
 	});
@@ -19753,6 +19766,41 @@
 	});
 
 	exports.default = CommentForm;
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(148);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Comment = _react2.default.createClass({
+	    displayName: 'Comment',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'comment' },
+	            _react2.default.createElement(
+	                'h2',
+	                { className: 'commentAuthor' },
+	                this.props.author
+	            ),
+	            this.props.children
+	        );
+	    }
+	});
+
+	exports.default = Comment;
 
 /***/ }
 /******/ ]);

@@ -3,8 +3,9 @@
 const webpack = require('webpack');
 
 module.exports = {
+    context: __dirname + '/app',
     // Точки входа
-    entry: './main',
+    entry: './app',
 
     watch: true,
     // Сколько ждать при изменении файла чтоб watch отработал
@@ -14,7 +15,7 @@ module.exports = {
 
     // Куда нужно выкладывать
     output: {
-        path:       __dirname + '/build',
+        path:       __dirname + '/public/build',
         publicPath: '/build/',
         filename:   '[name].js'
     },
@@ -48,6 +49,11 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        new webpack.ProvidePlugin({
+            $:               'jquery',
+            jQuery:          'jquery',
+            'window.jQuery': 'jquery'
+        })
     ]
 };

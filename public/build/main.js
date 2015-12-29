@@ -54,13 +54,13 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _commentBox = __webpack_require__(147);
+	var _box = __webpack_require__(160);
 
-	var _commentBox2 = _interopRequireDefault(_commentBox);
+	var _box2 = _interopRequireDefault(_box);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_reactDom2.default.render(_react2.default.createElement(_commentBox2.default, null), document.getElementById('content'));
+	_reactDom2.default.render(_react2.default.createElement(_box2.default, null), document.getElementById('content'));
 
 /***/ },
 /* 1 */
@@ -18657,36 +18657,7 @@
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 147 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(148);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var CommentBox = _react2.default.createClass({
-	    displayName: 'CommentBox',
-
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'div',
-	            { 'class': 'commentBox' },
-	            'Hello, world! I am a CommentBox'
-	        );
-	    }
-	});
-
-	exports.default = CommentBox;
-
-/***/ },
+/* 147 */,
 /* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -19678,6 +19649,110 @@
 
 	module.exports = deprecated;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 160 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(148);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _list = __webpack_require__(161);
+
+	var _list2 = _interopRequireDefault(_list);
+
+	var _form = __webpack_require__(162);
+
+	var _form2 = _interopRequireDefault(_form);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var CommentBox = _react2.default.createClass({
+	    displayName: 'CommentBox',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'commentBox' },
+	            _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Comments'
+	            ),
+	            _react2.default.createElement(_list2.default, null),
+	            _react2.default.createElement(_form2.default, null)
+	        );
+	    }
+	});
+
+	exports.default = CommentBox;
+
+/***/ },
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(148);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var CommentList = _react2.default.createClass({
+	    displayName: 'CommentList',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'commentList' },
+	            'Hello, world! I am a CommentList'
+	        );
+	    }
+	});
+
+	exports.default = CommentList;
+
+/***/ },
+/* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(148);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var CommentForm = _react2.default.createClass({
+	    displayName: 'CommentForm',
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'commentForm' },
+	            'Hello, world! I am a CommentForm'
+	        );
+	    }
+	});
+
+	exports.default = CommentForm;
 
 /***/ }
 /******/ ]);

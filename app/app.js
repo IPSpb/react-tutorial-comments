@@ -1,8 +1,8 @@
 'use strict';
 
-import React      from 'react';
-import ReactDOM   from 'react-dom';
-import CommentBox from './components/comments/comment-box';
+import React       from 'react';
+import ReactDOM    from 'react-dom';
+import CommentBox  from './components/comments/box';
 
 ReactDOM.render(
     <CommentBox />,

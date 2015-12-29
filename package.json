@@ -1,0 +1,33 @@
+{
+  "name": "react-getting-started",
+  "version": "1.0.0",
+  "description": "Getting Started",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IPSpb/react-getting-started.git"
+  },
+  "author": "iv.popov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IPSpb/react-getting-started/issues"
+  },
+  "homepage": "https://github.com/IPSpb/react-getting-started#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.3.13",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "webpack": "^1.12.9"
+  }
+}

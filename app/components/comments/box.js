@@ -7,9 +7,9 @@ import CommentForm from './form';
 const CommentBox = React.createClass({
     render: function () {
         return (
-            <div className="commentBox">
+            <div className='commentBox'>
                 <h1>Comments</h1>
-                <CommentList />
+                <CommentList data={this.props.data}/>
                 <CommentForm />
             </div>
         );
